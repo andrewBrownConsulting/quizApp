@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 
 export default function AnswerBox(answers: string[], correct: number, answered: boolean, setAnswered: any, score: any, setScore: any) {
-    const blueBox = "bg-[#5F5980] text-white p-10 text-left rounded-lg w-full";
-    const greenBox = "bg-[#417F43] text-white p-10 text-left rounded-lg w-full";
-    const redBox = "bg-[#892325] text-white p-10 text-left rounded-lg w-full";
+    const blueBox = "bg-[#5F5980] text-white p-5 text-left rounded-lg w-full";
+    const greenBox = "bg-[#417F43] text-white p-5 text-left rounded-lg w-full";
+    const redBox = "bg-[#892325] text-white p-5 text-left rounded-lg w-full";
     function rightAnswer(e: any) {
         setScore(score + 1);
         if (answered) return;
